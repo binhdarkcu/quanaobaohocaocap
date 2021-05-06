@@ -564,6 +564,7 @@
  nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
      border: solid 1px #e0e0e0;
      left: auto;
+     right: 0;
 }
  .btn-cart{
 }

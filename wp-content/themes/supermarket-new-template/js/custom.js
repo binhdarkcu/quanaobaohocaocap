@@ -211,6 +211,7 @@
 	$(".brand-box").niceScroll({
 		cursorcolor: "#9b9b9c",
 	});
-	
+
+	$('.megamenu-product').append($('#product-menu')[0].outerHTML)
 	
 }(jQuery));

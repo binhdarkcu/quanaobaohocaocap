@@ -5,8 +5,9 @@ jQuery(function(jQuery) {
 		preview = jQuery(this).siblings('.custom_preview_image');
 		tb_show('', 'media-upload.php?type=image&TB_iframe=true');
 		window.send_to_editor = function(html) {
-			imgurl = jQuery('img',html).attr('src');
-			classes = jQuery('img', html).attr('class');
+			imgurl = jQuery(html).attr('src');
+			classes = jQuery(html).attr('class');
+			console.log(classes)
 			id = classes.replace(/(.*?)wp-image-/, '');
 			formfield.val(id);
 			preview.attr('src', imgurl);
